@@ -394,7 +394,7 @@ MonoBehaviour:
   collectSounds:
   - {fileID: 8300000, guid: 547ff3e60e7034deab642a204a1443d5, type: 3}
   itemAmount: 1
-  itemName: 
+  itemName: Coin
   UIImage: {fileID: 0}
 --- !u!82 &82676315453445592
 AudioSource:
