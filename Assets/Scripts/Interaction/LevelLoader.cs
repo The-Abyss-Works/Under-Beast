@@ -5,17 +5,21 @@ using UnityEngine;
 public class LevelLoader : MonoBehaviour
 {
     [SerializeField] public GameObject loader;
+    private GameObject player;
+    private NewPlayer playerstats;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"));
         {
+            player = collision.gameObject;
+            playerstats = collision.GetComponent<NewPlayer>();
+            //playerstats.frozen = true;
+            Time.timeScale = 0f;
+            Cursor.visible = true;
             loader.SetActive(true);
         }
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        loader.SetActive(false);
-    }
+
 
 }

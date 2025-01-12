@@ -34,6 +34,21 @@ public class ShopSystem : MonoBehaviour
         playerStats.frozen = false;
     }
 
+   
+
+    public void BuySystem(string name)
+    {
+        switch (name)
+        {
+            case "atk":
+                Buy("atk", 10);
+                break;
+            case "def":
+                Buy("def", 15);
+                break;
+        }
+    }
+
     public void Buy(string name, int cost)
     {
         switch (name)

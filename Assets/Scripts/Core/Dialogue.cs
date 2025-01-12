@@ -69,5 +69,28 @@ public class Dialogue : MonoBehaviour
             "...",
             "The Transmission Ended"
         });
+
+        dialogue.Add("ClosedShopA", new string[]
+        {
+            "The Doors are closed",
+            "Seems like the shopkeeper is not here...",
+            "I'll check it later"
+        });
+
+        dialogue.Add("DoorDarkA", new string[]
+        {
+            "The Door Is Locked?...",
+            "...No, it requires a payment...",
+            "I should quickly collect the 15 coins it requires..."
+        }) ;
+
+        dialogue.Add("DoorDarkB", new string[]
+        {
+            "Note From Maker:",
+            "Hello, Thanks For playing This Demo, ",
+            "The Full version will be out after some tweaks"
+        });
     }
+
+
 }
